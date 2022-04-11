@@ -1,0 +1,162 @@
+.all-wp {
+    display: flex;
+    flex-direction: column;
+}
+
+.bars-wp {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.bars {
+    width: 35vw;
+    height: 150px;
+    margin-top: 40px;
+}
+
+.bar-name {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.health-wp {
+    display: flex;
+    flex-direction: row;
+}
+
+.health-bar-red {
+    position: relative;
+    width: 90%;
+    height: 30px;
+    margin: auto;
+    background-color: red;
+}
+
+.health-bar-green {
+    width: 100%;
+    height: 30px;
+    background: green;
+    transition: width .5s ease;
+}
+
+.percent {
+    float: right;
+    margin-right: 10px;
+    margin-top: -26px !important;
+    color: white;
+    z-index: 99;
+}
+
+.new-game {
+    width: 70vw;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid gray;
+    border-radius: 15px;
+    box-shadow: 5px 5px 18px 6px gray;
+}
+
+.new-game button {
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: #70ffbd;
+}
+
+.buttons_wp {
+    width: 70vw;
+    height: 100px;
+    margin: auto;
+    border: 1px solid gray;
+    border-radius: 15px;
+    box-shadow: 5px 5px 18px 6px gray;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 100%;
+    margin: auto;
+}
+
+.btn-attack {
+    background-color: darkred;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    margin-right: 5px !important;
+    font-weight: 600;
+}
+
+.btn-special-attack {
+    background-color: #ff5244;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    margin-right: 5px !important;
+    font-weight: 600;
+}
+
+.btn-heal {
+    background-color: lime;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    margin-right: 5px !important;
+    font-weight: 600;
+}
+
+.btn-give-up {
+    background-color: #4f5bff;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    font-weight: 600;
+}
+
+.btn-attack:hover, .btn-special-attack:hover,
+.btn-heal:hover, .btn-give-up:hover {
+    color: white;
+}
+
+/*.logs{*/
+/*    width: 80%;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    margin: auto;*/
+/*    margin-top: 50px;*/
+/*    box-shadow: 3px 2px 11px gray;*/
+/*}*/
+
+/*.logs ul{*/
+/*    list-style: none;*/
+/*    margin-top: 15px;*/
+/*}*/
+
+/*.logs ul .player-turn{*/
+/*    text-align: center;*/
+/*    width: 900px;*/
+/*    color: blue;*/
+/*    background-color: #fff1c6;*/
+/*}*/
+
+/*.logs ul .monster-turn{*/
+/*    text-align: center;*/
+/*    width: 900px;*/
+/*    color: red;*/
+/*    background-color: #ceffc3;*/
+/*}*/
+
+

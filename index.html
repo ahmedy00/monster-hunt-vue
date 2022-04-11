@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Monster Hunt</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+
+<div id="app">
+    <div class="all-wp">
+        <div class="bars-wp">
+            <div class="bars">
+                <div class="bar-name"> You</div>
+                <div class="health-wp">
+                    <div class="health-bar-red">
+                        <div class="health-bar-green" :style=" { width : player_health + '%' }"></div>
+                        <div class="percent"> %{{ player_health }}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bars">
+                <div class="bar-name"> Monster</div>
+                <div class="health-wp">
+                    <div class="health-bar-red">
+                        <div class="health-bar-green" :style=" { width : monster_health + '%' }"></div>
+                        <div class="percent"> %{{ monster_health }}</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div v-if="!game_is_on" class="new-game">
+            <button @click="startGame()"> NEW GAME</button>
+        </div>
+
+        <div v-if="game_is_on" class="buttons_wp">
+            <div class="buttons">
+                <button class="btn-attack" @click="attack()">
+                    <span style="padding: 9px 9px 9px 9px">Attack!</span>
+                </button>
+                <button class="btn-special-attack" @click="specialAttack()">
+                    <span style="padding: 9px 9px 9px 9px">Special Attack!</span>
+                </button>
+                <button class="btn-heal" @click="heal()">
+                    <span style="padding: 9px 9px 9px 9px">Heal</span></button>
+                <button class="btn-give-up" @click="giveUp()">
+                    <span style="padding: 9px 9px 9px 9px">Give Up</span>
+                </button>
+            </div>
+        </div>
+
+<!--        <div v-if="game_is_on" class="logs">-->
+<!--            <ul>-->
+<!--                <li class="player-turn">{{ player_health}}</li>-->
+<!--                <li class="monster-turn"></li>-->
+<!--                <li class="player-turn"></li>-->
+<!--                <li class="monster-turn"></li>-->
+<!--                <li class="player-turn"></li>-->
+<!--                <li class="monster-turn"></li>-->
+<!--            </ul>-->
+<!--        </div>-->
+    </div>
+</div>
+
+
+<script src="vue.js"></script>
+</body>
+</html>
